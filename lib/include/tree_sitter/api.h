@@ -534,7 +534,7 @@ bool ts_node_eq(TSNode, TSNode);
  * possible using the `TSNode` functions. It is a mutable object that is always
  * on a certain syntax node, and can be moved imperatively to different nodes.
  */
-TSTreeCursor ts_tree_cursor_new(TSNode);
+TSTreeCursor *ts_tree_cursor_new(TSNode);
 
 /**
  * Delete a tree cursor, freeing all of the memory that it used.
